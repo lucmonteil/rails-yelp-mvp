@@ -1,0 +1,9 @@
+<div class="container">
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, label: 'The restaurant name please', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :address, error: 'Adress is mandatory, please specify one' %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+  <%= f.button :submit %>
+<% end %>
+</div>

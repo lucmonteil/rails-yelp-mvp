@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    <%= image_tag 'http://lorempixel.com/300/200/food' %>
+  </div>
+  <div class="card-body">
+    <h2><%= restaurant.name %></h2>
+    <p class="address"><%= restaurant.address %> (<%= restaurant.phone_number %>) %></p>
+    <p><%= link_to 'Show', restaurant, class: "btn btn-primary"%></p>
+    <p><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-primary" %></p>
+    <p><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></p>
+  </div>
+</div>
